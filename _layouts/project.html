@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101111" />
+    <title>{{ page.title }} — 0xyz-exe</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .project-header {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 8rem 2rem 4rem;
+      }
+      .project-meta {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        font-size: 0.875rem;
+        color: #7a7a7a;
+      }
+      .project-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem 4rem;
+        line-height: 1.7;
+      }
+      .project-content h2 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.75rem;
+      }
+      .project-content h3 {
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+      }
+      .project-content ul {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+      }
+      .project-content pre {
+        background: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      .project-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+      }
+      .tag {
+        padding: 0.25rem 0.75rem;
+        background: #1a1a1a;
+        border-radius: 4px;
+        font-size: 0.875rem;
+        color: #c5ff5c;
+      }
+      .back-link {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #c5ff5c;
+        text-decoration: none;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="0xyz-exe home">
+        <span class="wordmark-mark">0x</span>
+        <span>0xyz<span class="dim">-exe</span></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a class="nav-github" href="https://github.com/0xyz-exe" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-header">
+        <a class="back-link" href="/#work">← Back to portfolio</a>
+        <h1>{{ page.title }}</h1>
+        <p class="hero-intro">{{ page.description }}</p>
+        
+        <div class="project-tags">
+          {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        
+        <div class="project-meta">
+          <span>Status: {{ page.status }}</span>
+          <span>Year: {{ page.year }}</span>
+          <span><a href="{{ page.github }}" target="_blank" rel="noreferrer">View on GitHub ↗</a></span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="footer section-wrap">
+      <a class="wordmark" href="/">
+        <span class="wordmark-mark">0x</span>
+        <span>0xyz<span class="dim">-exe</span></span>
+      </a>
+      <p>Built with curiosity. <span id="year">2024</span></p>
+      <a class="footer-top" href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </body>
+</html>

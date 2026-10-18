@@ -1,0 +1,32 @@
+# Jekyll configuration for 0xyz-exe portfolio
+title: 0xyz-exe — Developer & Builder
+description: Portfolio and project showcase for 0xyz-exe. Full-stack developer, ML engineer, and builder exploring software, AI systems, and thoughtful interfaces.
+url: https://0xyz-exe.github.io
+baseurl: ""
+author: 0xyz-exe
+email: ""
+github_username: 0xyz-exe
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
