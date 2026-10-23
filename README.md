@@ -2,6 +2,23 @@
 
 Static, GitHub Pages-compatible portfolio. No build system or runtime dependencies are required.
 
+
+Repository: https://github.com/0xyz-exe/0xyz-exe.github.io
+
+## Screenshots
+
+### Terminal Interface & Developer Hero
+![Portfolio Hero](docs/screenshots/01_portfolio_hero.png)
+
+### Featured Engineering Projects Showcase
+![Projects Showcase](docs/screenshots/02_projects_showcase.png)
+
+### Technical Skills & System Architecture Matrix
+![Technical Skills](docs/screenshots/03_skills_matrix.png)
+
+### Contact & Professional Coordinates
+![Contact Coordinates](docs/screenshots/04_contact_coordinates.png)
+
 ## Preview locally
 
 From this directory, run a local static server, for example:
