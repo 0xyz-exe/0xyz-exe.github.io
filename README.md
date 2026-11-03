@@ -1,42 +1,36 @@
-# 0xyz-exe portfolio
+# Daniel Achmad Farizki — Engineering Portfolio
 
-Static, GitHub Pages-compatible portfolio. No build system or runtime dependencies are required.
-
-
-Repository: https://github.com/0xyz-exe/0xyz-exe.github.io
-
-## Screenshots
-
-### Terminal Interface & Developer Hero
-![Portfolio Hero](docs/screenshots/01_portfolio_hero.png)
-
-### Featured Engineering Projects Showcase
-![Projects Showcase](docs/screenshots/02_projects_showcase.png)
-
-### Technical Skills & System Architecture Matrix
-![Technical Skills](docs/screenshots/03_skills_matrix.png)
-
-### Contact & Professional Coordinates
-![Contact Coordinates](docs/screenshots/04_contact_coordinates.png)
+Static, GitHub Pages-compatible portfolio built with Jekyll-compatible HTML, CSS, and vanilla JavaScript. Design foundation: INSTRUMENTAL, the original semantic design language in `assets/design/tokens/`.
 
 ## Preview locally
-
-From this directory, run a local static server, for example:
 
 ```sh
 python -m http.server 8000
 ```
 
-Then open <http://localhost:8000/>. (Opening `index.html` directly also works, but browsers may limit API requests from `file://`.)
+Open <http://localhost:8000/>. No JavaScript packages, API keys, paid services, or remote fonts required.
 
-## Deploy
+## Architecture
 
-The site is served from the repository's `main` branch root on GitHub Pages. Publishing changes to `main` triggers the static site update; no build step is needed.
+- `index.html`: one-page portfolio, project evidence, experience, metadata.
+- `assets/css/site.css`: responsive layout and components.
+- `assets/design/tokens/`: canonical semantic CSS tokens and themes.
+- `assets/js/main.js`: theme preference and accessible mobile navigation.
+- `_projects/`, `_layouts/`: existing Jekyll project detail pages retained.
+- `assets/profile.png`: user-supplied portrait.
 
-## GitHub data
+## Design language
 
-On each visit, the page requests `https://api.github.com/users/0xyz-exe/repos?per_page=100&sort=updated`. It displays selected non-fork, non-archived repositories and uses descriptions, languages, stars, and links supplied by GitHub. A small localStorage copy is shown if available during refresh or when the public API is unavailable. API rate limits and GitHub's own update propagation mean this is near-real-time, not instantaneous. No token is embedded or required.
+Dark is default; the switch toggles light/dark and persists in local storage. First visit follows the OS color preference. Colors, spacing, type, motion, and surfaces follow INSTRUMENTAL. See `DESIGN.md` for implementation rules. Keep monospace for short metadata; use semantic tokens; honor reduced motion and visible keyboard focus.
 
-## HyperFrames
+## Content maintenance
 
-HyperFrames is an HTML-to-video composition and rendering tool, not a website animation framework. This portfolio uses CSS and browser-native APIs for its live interactions; HyperFrames is not installed or added to the production site. It could be used separately to render an optional showreel if desired.
+Verify repository descriptions, links, stacks, and development status against the public source before changing project entries. Do not claim employment outcomes, personal ownership, metrics, certification IDs, or deployments without evidence. The contact action uses a real `mailto:` link; no form pretends to send messages. GitHub links are direct, with no live stats API.
+
+## Build and deployment
+
+The existing Jekyll/GitHub Pages architecture remains. Gemfile retains Jekyll 4.3, `jekyll-seo-tag`, and `jekyll-sitemap`; GitHub Pages publishes from the repository root on `main`. For local Jekyll builds, install Ruby/Bundler and run `bundle install && bundle exec jekyll build`. No publication or deployment is performed from this feature branch.
+
+## Verification
+
+Check `node --check assets/js/main.js`, validate token JSON, build with Jekyll when Ruby is available, then test theme persistence, keyboard navigation, mobile menu, responsive widths, links, and browser console in a real browser. Do not describe screenshot files as available unless captured and added.

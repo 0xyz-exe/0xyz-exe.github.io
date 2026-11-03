@@ -1,13 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#101111" />
-    <title>{{ page.title }} — 0xyz-exe</title>
-    <meta name="description" content="{{ page.description }}" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css" />
+    <title>{{ page.title }} — Daniel Achmad Farizki</title>
+        <meta name="description" content="{{ page.description }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="{{ page.title }} — Daniel Achmad Farizki" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <link rel="canonical" href="{{ page.url | absolute_url }}" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="/assets/design/tokens/design.css" />
+        <link rel="stylesheet" href="/assets/css/site.css" />
+        <script>document.documentElement.classList.add('js');</script>
+        <script src="/assets/js/main.js" defer></script>
     <style>
       .project-header {
         max-width: 800px;
@@ -72,18 +79,12 @@
     </style>
   </head>
   <body>
-    <header class="topbar">
-      <a class="wordmark" href="/" aria-label="0xyz-exe home">
-        <span class="wordmark-mark">0x</span>
-        <span>0xyz<span class="dim">-exe</span></span>
-      </a>
+    <header class="topbar" id="top">
+      <a class="wordmark" href="/" aria-label="Daniel Achmad Farizki, home">DAF<span>/</span><small>ENGINEERING</small></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
       <nav class="nav" id="site-nav" aria-label="Main navigation">
-        <a href="/#work">Work</a>
-        <a href="/#about">About</a>
-        <a href="/#contact">Contact</a>
-        <a class="nav-github" href="https://github.com/0xyz-exe" target="_blank" rel="noreferrer">
-          GitHub <span aria-hidden="true">↗</span>
-        </a>
+        <a href="/#about">About</a><a href="/#expertise">Expertise</a><a href="/#work">Projects</a><a href="/#experience">Experience</a><a href="/#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme"><span aria-hidden="true">◐</span> <span class="theme-label">Light</span></button>
       </nav>
     </header>
 
@@ -111,13 +112,10 @@
       </div>
     </main>
 
-    <footer class="footer section-wrap">
-      <a class="wordmark" href="/">
-        <span class="wordmark-mark">0x</span>
-        <span>0xyz<span class="dim">-exe</span></span>
-      </a>
-      <p>Built with curiosity. <span id="year">2024</span></p>
-      <a class="footer-top" href="#top">BACK TO TOP ↑</a>
+    <footer class="footer wrap">
+      <a class="wordmark" href="/">DAF<span>/</span><small>ENGINEERING</small></a>
+      <p>INSTRUMENTAL · MAKE THE COMPLEX LEGIBLE</p>
+      <span>© Daniel Achmad Farizki</span>
     </footer>
   </body>
 </html>

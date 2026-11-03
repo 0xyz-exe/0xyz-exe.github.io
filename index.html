@@ -1,225 +1,84 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101111" />
-    <meta
-      name="description"
-      content="The portfolio of 0xyz-exe — a developer exploring thoughtful software, web experiences, and machine thoughtful interfaces, multi-agent workflows, and practical AI tools."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="0xyz-exe — Developer & builder" />
-    <meta
-      property="og:description"
-      content="Selected work, public repositories, and notes from 0xyz-exe."
-    />
-    <meta property="og:url" content="https://0xyz-exe.github.io/" />
-    <link rel="canonical" href="https://0xyz-exe.github.io/" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://api.github.com" />
-    <link rel="preconnect" href="https://avatars.githubusercontent.com" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>0xyz-exe — Developer & builder</title>
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="0xyz-exe home"
-        ><span class="wordmark-mark">0x</span
-        ><span>0xyz<span class="dim">-exe</span></span></a
-      >
-      <nav class="nav" id="site-nav" aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#about">About</a
-        ><a href="#contact">Contact</a>
-        <a
-          class="nav-github"
-          href="https://github.com/0xyz-exe"
-          target="_blank"
-          rel="noreferrer"
-          >GitHub <span aria-hidden="true">↗</span></a
-        >
-      </nav>
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="site-nav"
-      >
-        <span></span><span></span>
-      </button>
-    </header>
-
-    <main id="main">
-      <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> INDEPENDENT DEVELOPER
-            <span class="eyebrow-line"></span> SURABAYA, ID
-          </p>
-          <h1 id="hero-title">
-            Building for<br /><span class="headline-accent">what’s next.</span>
-          </h1>
-          <p class="hero-intro">
-            I’m <strong>0xyz-exe</strong> — a developer exploring the edges
-            building systems at the edge of software and intelligence. I design
-            thoughtful interfaces, multi-agent workflows, and practical AI tools.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work"
-              >Explore selected work <span aria-hidden="true">↓</span></a
-            ><a
-              class="text-link"
-              href="https://github.com/0xyz-exe"
-              target="_blank"
-              rel="noreferrer"
-              >Find me on GitHub <span aria-hidden="true">↗</span></a
-            >
-          </div>
-          <div class="hero-meta">
-            <span>OPEN TO THE UNEXPECTED</span><span class="meta-rule"></span
-            ><span>CODE · CURIOSITY · CRAFT</span>
-          </div>
-        </div>
-        <div
-          class="hero-art"
-          aria-label="Abstract orbital illustration"
-          role="img"
-        >
-          <div class="art-grid"></div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit orbit-three"></div>
-          <div class="core"><span>0x</span><i></i></div>
-          <span class="art-label label-top">FIG. 01 / MAKING THINGS</span
-          ><span class="art-label label-side">IDEA → INTERFACE → IMPACT</span
-          ><span class="art-coordinate">-7.25° N<br />112.75° E</span>
-        </div>
-        <a class="scroll-cue" href="#work"
-          ><span class="scroll-line"></span> SCROLL TO EXPLORE</a
-        >
-      </section>
-
-      <section class="work section-wrap" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">A SELECTION OF PUBLIC REPOSITORIES</p>
-            <h2 id="work-title">Selected <span>work</span></h2>
-          </div>
-          <a
-            class="text-link all-repos"
-            href="https://github.com/0xyz-exe?tab=repositories"
-            target="_blank"
-            rel="noreferrer"
-            >All repositories <span aria-hidden="true">↗</span></a
-          >
-        </div>
-        <div
-          class="repo-status"
-          id="repo-status"
-          role="status"
-          aria-live="polite"
-        >
-          <span class="status-dot"></span> Connecting to GitHub…
-        </div>
-        <div class="project-grid" id="projects" aria-live="polite"></div>
-        <noscript
-          ><p class="noscript-note">
-            Enable JavaScript to load current public repositories from GitHub.
-            <a href="https://github.com/0xyz-exe?tab=repositories"
-              >Browse repositories directly ↗</a
-            >
-          </p></noscript
-        >
-        <p class="data-note">
-          Repository details refresh from GitHub’s public API when this page
-          loads. Updates may be delayed by API caching or rate limits.
-        </p>
-      </section>
-
-      <section
-        class="about section-wrap"
-        id="about"
-        aria-labelledby="about-title"
-      >
-        <div class="about-index">
-          <span>01</span><span class="vertical-label">A LITTLE CONTEXT</span>
-        </div>
-        <div class="about-main">
-          <p class="eyebrow">BEHIND THE BUILDS</p>
-          <h2 id="about-title">
-            Curiosity is<br />the <span>starting point.</span>
-          </h2>
-          <div class="about-columns">
-            <p>
-              I like learning by making: shaping ideas into software, following
-              questions across disciplines, and refining the details that make a
-              tool feel clear and useful.
-            </p>
-            <div class="about-facts">
-              <div>
-                <span class="fact-label">BASED IN</span
-                ><span>Surabaya, Indonesia</span>
-              </div>
-              <div>
-                <span class="fact-label">ON THE WEB</span
-                ><a
-                  href="https://github.com/0xyz-exe"
-                  target="_blank"
-                  rel="noreferrer"
-                  >github.com/0xyz-exe ↗</a
-                >
-              </div>
-              <div>
-                <span class="fact-label">EXPLORING</span
-                ><span>Full-stack web · multi-agent AI · computer vision · tooling</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-mark" aria-hidden="true">✳</div>
-      </section>
-
-      <section
-        class="contact section-wrap"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="contact-inner">
-          <p class="eyebrow">HAVE A GOOD QUESTION OR IDEA?</p>
-          <h2 id="contact-title">
-            Let’s make<br /><span>something real.</span>
-          </h2>
-          <p class="contact-copy">
-            The easiest way to reach me is through GitHub. Open an issue on a
-            relevant project or get in touch there.
-          </p>
-          <a
-            class="button button-light"
-            href="https://github.com/0xyz-exe"
-            target="_blank"
-            rel="noreferrer"
-            >Say hello on GitHub <span aria-hidden="true">↗</span></a
-          >
-        </div>
-        <div class="contact-orbit" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer section-wrap">
-      <a class="wordmark" href="#top"
-        ><span class="wordmark-mark">0x</span
-        ><span>0xyz<span class="dim">-exe</span></span></a
-      >
-      <p>Built with curiosity. <span id="year"></span></p>
-      <a class="footer-top" href="#top">BACK TO TOP ↑</a>
-    </footer>
-  </body>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101312">
+  <meta name="description" content="Daniel Achmad Farizki is a full-stack developer and software engineer working across web applications, AI systems, and developer tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Achmad Farizki — Software Engineer">
+  <meta property="og:description" content="Selected engineering work across full-stack software, AI systems, and developer tooling.">
+  <meta property="og:url" content="https://0xyz-exe.github.io/">
+  <meta property="og:image" content="https://0xyz-exe.github.io/assets/profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://0xyz-exe.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/main.js" defer></script>
+  <title>Daniel Achmad Farizki — Software Engineer</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" id="top">
+    <a class="wordmark" href="#top" aria-label="Daniel Achmad Farizki, home">DAF<span>/</span><small>ENGINEERING</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme"><span aria-hidden="true">◐</span> <span class="theme-label">Light</span></button>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> SOFTWARE ENGINEERING · SIDOARJO, ID</p>
+        <h1 id="hero-title">Engineering systems.<br><span>Making complexity legible.</span></h1>
+        <p class="lede">I’m Daniel Achmad Farizki — a full-stack developer and software engineer working across web technologies, intelligent systems, and AI-powered applications.</p>
+        <div class="actions"><a class="button primary" href="#work">Explore projects <span aria-hidden="true">↓</span></a><a class="button quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-meta"><span>FULL-STACK</span><i></i><span>AI / ML</span><i></i><span>DEVELOPER TOOLS</span></p>
+      </div>
+      <figure class="portrait"><img src="assets/profile.png" alt="Portrait of Daniel Achmad Farizki"><figcaption><span>PROFILE / 001</span><span>0XYZ-EXE</span></figcaption></figure>
+      <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> 01 / APPROACH</a>
+    </section>
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-head"><div><p class="eyebrow">01 / ENGINEERING PROFILE</p><h2 id="about-title">How I approach <span>engineering.</span></h2></div><p class="section-note">Structure first. Evidence over assumption.</p></div>
+      <div class="profile-grid"><p class="profile-lede">I work from the system boundary inward: clarify the problem, make data and responsibilities explicit, then build an interface that keeps the important details understandable.</p><div class="profile-copy"><p>My projects span full-stack applications, backend workflows, AI integrations, and tools for developers. I pay attention to the parts that make software dependable: clear contracts, access boundaries, useful error states, and testing the path a person actually takes.</p><p>I use AI and automation as engineering tools—not substitutes for verification. The aim is software that is useful, inspectable, and straightforward to maintain.</p></div></div>
+    </section>
+    <section class="section wrap" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-head"><div><p class="eyebrow">02 / PRACTICE AREAS</p><h2 id="expertise-title">Technical <span>expertise.</span></h2></div><p class="section-note">Tools applied in public project work.</p></div>
+      <div class="expertise-list">
+        <article><span class="index">A</span><div><h3>Software engineering</h3><p>System design · API design · database modeling · testing · debugging</p></div><span class="expertise-mark" aria-hidden="true">↗</span></article>
+        <article><span class="index">B</span><div><h3>Frontend engineering</h3><p>HTML · CSS · JavaScript · TypeScript · responsive interfaces</p></div><span class="expertise-mark" aria-hidden="true">↗</span></article>
+        <article><span class="index">C</span><div><h3>Backend engineering</h3><p>PHP · Laravel · Python · FastAPI · REST APIs · authentication</p></div><span class="expertise-mark" aria-hidden="true">↗</span></article>
+        <article><span class="index">D</span><div><h3>AI / machine learning</h3><p>Python · AI integration · prompt engineering · YOLO computer vision</p></div><span class="expertise-mark" aria-hidden="true">↗</span></article>
+        <article><span class="index">E</span><div><h3>Developer tooling</h3><p>Git · GitHub · Docker · Playwright · CI workflows</p></div><span class="expertise-mark" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head"><div><p class="eyebrow">03 / ENGINEERING CASES</p><h2 id="work-title">Selected <span>work.</span></h2></div><a class="text-link" href="https://github.com/0xyz-exe?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a></div>
+      <div class="projects-grid">
+        <article class="project"><figure class="project-preview"><img src="assets/projects/openagentstudio.jpg" alt="OpenAgentStudio workflow editor showing a node canvas and agent settings panel" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / WORKFLOW BUILDER</figcaption></figure><div class="project-top"><span>01 / AGENTIC AI</span><span class="project-status">PROTOTYPE</span></div><h3>OpenAgentStudio</h3><p><strong>Problem:</strong> Agent workflows need visibility before they can be debugged. A local-first prototype for composing, inspecting, and orchestrating agent pipelines. <strong>Challenge:</strong> make intermediate agent steps inspectable. No claimed provider isolation, durable execution, or permission controls.</p><ul class="tags"><li>Python</li><li>Agent workflows</li><li>Local-first</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/OpenAgentStudio" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
+        <article class="project"><figure class="project-preview"><img src="assets/projects/migrationpilot.jpg" alt="MigrationPilot analysis workspace with SQL migration editor and safety findings" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / MIGRATION ANALYSIS</figcaption></figure><div class="project-top"><span>02 / DATABASE SAFETY</span><span class="project-status">PROTOTYPE</span></div><h3>MigrationPilot</h3><p><strong>Problem:</strong> Destructive or blocking DDL can cause outages. Static PostgreSQL migration analysis parses schemas, evaluates deterministic safety rules, and suggests safer alternatives. <strong>Challenge:</strong> explain risk without executing migrations. No live database execution.</p><ul class="tags"><li>TypeScript</li><li>PostgreSQL AST</li><li>CLI · CI · SARIF</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/migrationpilot" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
+        <article class="project"><figure class="project-preview"><img src="assets/projects/access-trail.jpg" alt="AccessTrail identity governance dashboard with access review and audit information" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / ACCESS DASHBOARD</figcaption></figure><div class="project-top"><span>03 / IDENTITY SECURITY</span><span class="project-status">PROTOTYPE</span></div><h3>AccessTrail</h3><p><strong>Problem:</strong> Entitlement reviews need traceable decisions. The platform implements access review flows, server-enforced separation of duties, revocation states, and a verifiable SHA-256 audit chain. <strong>Challenge:</strong> preserve audit integrity across authorization-sensitive actions. Verify production readiness independently.</p><ul class="tags"><li>FastAPI</li><li>React · TypeScript</li><li>RBAC · Audit chain</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/access-trail" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
+        <article class="project"><figure class="project-preview"><img src="assets/projects/dataquality-forge.jpg" alt="DataQuality Forge dataset profiling dashboard with validation and run metrics" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / DATA PROFILING</figcaption></figure><div class="project-top"><span>04 / DATA ENGINEERING</span><span class="project-status">PROTOTYPE</span></div><h3>DataQuality Forge</h3><p><strong>Problem:</strong> Data defects need reproducible checks. Local dataset profiling, declarative validation rules, explainable scoring, and schema change detection combine in one self-hosted tool. <strong>Challenge:</strong> apply consistent checks across tabular formats and surface actionable failures.</p><ul class="tags"><li>FastAPI</li><li>DuckDB</li><li>React · TypeScript</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/dataquality-forge" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
+        <article class="project"><figure class="project-preview"><img src="assets/projects/shipguard.jpg" alt="ShipGuard release assessment dashboard showing readiness checks and findings" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / RELEASE ASSESSMENT</figcaption></figure><div class="project-top"><span>05 / RELEASE ENGINEERING</span><span class="project-status">FUNCTIONAL · TESTED</span></div><h3>ShipGuard</h3><p><strong>Problem:</strong> Release checks are fragmented. A local analyzer combines deterministic quality gates for security, tests, dependencies, build readiness, and documentation; emits SARIF. <strong>Evidence:</strong> 17 tests pass, build succeeds on the inspected main branch.</p><ul class="tags"><li>TypeScript</li><li>CLI · SARIF</li><li>Vitest · CI</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/shipguard" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
+        <article class="project"><div class="project-top"><span>06 / FULL-STACK PRODUCT</span><span class="project-status">FUNCTIONAL · TESTED</span></div><h3>School CMS</h3><p><strong>Problem:</strong> School content requires maintainable editing workflows. A Laravel application supports academic announcements, gallery management, authentication, administration, and configurable site templates. Built during the documented internship.</p><ul class="tags"><li>Laravel 11</li><li>PHP · Blade</li><li>Tailwind CSS</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/sekolah" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="https://sekolah-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live site ↗</a></div></article>
+      </div>
+      <p class="section-footnote">Maturity labels reflect the inspected repository snapshot, not production certification. “Functional” means implementation and a test/build signal exist; deployment, security posture, and operational readiness remain separately unverified. See <a href="portfolio_audit_report.md">the complete repository audit, evidence, scores, and roadmap</a>.</p>
+    </section>
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-head"><div><p class="eyebrow">04 / BACKGROUND</p><h2 id="experience-title">Experience &amp; <span>education.</span></h2></div></div>
+      <div class="timeline">
+        <article><time>SEP 2025</time><div><h3>Web Developer Intern <span>— Madina Mentari Teknologi</span></h3><p>Worked on a school CMS using Laravel, Blade, and Tailwind CSS, including administration tools, content workflows, and configurable site themes.</p><a href="https://github.com/0xyz-exe/sekolah" target="_blank" rel="noopener noreferrer">School CMS repository ↗</a></div></article>
+        <article><time>2025—2026</time><div><h3>Google Student Ambassador</h3><p>Program participation. Activities and outcomes not listed here without independently verified details.</p></div></article>
+        <article><time>2022—2026</time><div><h3>Sarjana Informatika <span>— Universitas Nahdlatul Ulama Sidoarjo</span></h3><p>Degree completed; graduation date: 4 August 2026.</p></div></article>
+      </div>
+      <div class="cert-note"><span class="eyebrow">05 / CERTIFICATIONS</span><p>Certification records will be added when certificate details or verification links are available.</p></div>
+    </section>
+    <section class="github-band wrap" aria-label="GitHub profile"><div><p class="eyebrow">OPEN SOURCE / PUBLIC WORK</p><h2>Follow the work <span>at the source.</span></h2></div><a class="button primary" href="https://github.com/0xyz-exe" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><div class="contact-copy"><p class="eyebrow">06 / CONTACT</p><h2 id="contact-title">Have a problem<br>worth <span>making legible?</span></h2><p>For engineering roles, collaborations, or a thoughtful technical conversation, email is the most direct route.</p></div><div class="contact-links"><a href="mailto:danielachmadf@gmail.com">danielachmadf@gmail.com <span aria-hidden="true">↗</span></a><a href="https://github.com/0xyz-exe" target="_blank" rel="noopener noreferrer">GitHub / 0xyz-exe <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer wrap"><a class="wordmark" href="#top">DAF<span>/</span><small>ENGINEERING</small></a><p>INSTRUMENTAL · MAKE THE COMPLEX LEGIBLE</p><span>© <span id="year"></span> Daniel Achmad Farizki</span></footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Daniel Achmad Farizki","url":"https://0xyz-exe.github.io/","email":"mailto:danielachmadf@gmail.com","sameAs":["https://github.com/0xyz-exe"],"jobTitle":"Full-Stack Developer and Software Engineer","alumniOf":{"@type":"CollegeOrUniversity","name":"Universitas Nahdlatul Ulama Sidoarjo"}}</script>
+</body>
 </html>
