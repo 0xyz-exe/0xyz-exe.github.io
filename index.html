@@ -33,7 +33,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> SOFTWARE ENGINEERING · SIDOARJO, ID</p>
         <h1 id="hero-title">Engineering systems.<br><span>Making complexity legible.</span></h1>
-        <p class="lede">I’m Daniel Achmad Farizki — a full-stack developer and software engineer working across web technologies, intelligent systems, and AI-powered applications.</p>
+        <p class="lede">I'm Daniel Achmad Farizki — a full-stack developer and software engineer working across web technologies, intelligent systems, and AI-powered applications.</p>
         <div class="actions"><a class="button primary" href="#work">Explore projects <span aria-hidden="true">↓</span></a><a class="button quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
         <p class="hero-meta"><span>FULL-STACK</span><i></i><span>AI / ML</span><i></i><span>DEVELOPER TOOLS</span></p>
       </div>
@@ -57,14 +57,98 @@
     <section class="section wrap" id="work" aria-labelledby="work-title">
       <div class="section-head"><div><p class="eyebrow">03 / ENGINEERING CASES</p><h2 id="work-title">Selected <span>work.</span></h2></div><a class="text-link" href="https://github.com/0xyz-exe?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a></div>
       <div class="projects-grid">
-        <article class="project"><figure class="project-preview"><img src="assets/projects/openagentstudio.jpg" alt="OpenAgentStudio workflow editor showing a node canvas and agent settings panel" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / WORKFLOW BUILDER</figcaption></figure><div class="project-top"><span>01 / AGENTIC AI</span><span class="project-status">PROTOTYPE</span></div><h3>OpenAgentStudio</h3><p><strong>Problem:</strong> Agent workflows need visibility before they can be debugged. A local-first prototype for composing, inspecting, and orchestrating agent pipelines. <strong>Challenge:</strong> make intermediate agent steps inspectable. No claimed provider isolation, durable execution, or permission controls.</p><ul class="tags"><li>Python</li><li>Agent workflows</li><li>Local-first</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/OpenAgentStudio" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
-        <article class="project"><figure class="project-preview"><img src="assets/projects/migrationpilot.jpg" alt="MigrationPilot analysis workspace with SQL migration editor and safety findings" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / MIGRATION ANALYSIS</figcaption></figure><div class="project-top"><span>02 / DATABASE SAFETY</span><span class="project-status">PROTOTYPE</span></div><h3>MigrationPilot</h3><p><strong>Problem:</strong> Destructive or blocking DDL can cause outages. Static PostgreSQL migration analysis parses schemas, evaluates deterministic safety rules, and suggests safer alternatives. <strong>Challenge:</strong> explain risk without executing migrations. No live database execution.</p><ul class="tags"><li>TypeScript</li><li>PostgreSQL AST</li><li>CLI · CI · SARIF</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/migrationpilot" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
-        <article class="project"><figure class="project-preview"><img src="assets/projects/access-trail.jpg" alt="AccessTrail identity governance dashboard with access review and audit information" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / ACCESS DASHBOARD</figcaption></figure><div class="project-top"><span>03 / IDENTITY SECURITY</span><span class="project-status">PROTOTYPE</span></div><h3>AccessTrail</h3><p><strong>Problem:</strong> Entitlement reviews need traceable decisions. The platform implements access review flows, server-enforced separation of duties, revocation states, and a verifiable SHA-256 audit chain. <strong>Challenge:</strong> preserve audit integrity across authorization-sensitive actions. Verify production readiness independently.</p><ul class="tags"><li>FastAPI</li><li>React · TypeScript</li><li>RBAC · Audit chain</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/access-trail" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
-        <article class="project"><figure class="project-preview"><img src="assets/projects/dataquality-forge.jpg" alt="DataQuality Forge dataset profiling dashboard with validation and run metrics" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / DATA PROFILING</figcaption></figure><div class="project-top"><span>04 / DATA ENGINEERING</span><span class="project-status">PROTOTYPE</span></div><h3>DataQuality Forge</h3><p><strong>Problem:</strong> Data defects need reproducible checks. Local dataset profiling, declarative validation rules, explainable scoring, and schema change detection combine in one self-hosted tool. <strong>Challenge:</strong> apply consistent checks across tabular formats and surface actionable failures.</p><ul class="tags"><li>FastAPI</li><li>DuckDB</li><li>React · TypeScript</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/dataquality-forge" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
-        <article class="project"><figure class="project-preview"><img src="assets/projects/shipguard.jpg" alt="ShipGuard release assessment dashboard showing readiness checks and findings" loading="lazy" decoding="async"><figcaption>REPOSITORY SCREENSHOT / RELEASE ASSESSMENT</figcaption></figure><div class="project-top"><span>05 / RELEASE ENGINEERING</span><span class="project-status">FUNCTIONAL · TESTED</span></div><h3>ShipGuard</h3><p><strong>Problem:</strong> Release checks are fragmented. A local analyzer combines deterministic quality gates for security, tests, dependencies, build readiness, and documentation; emits SARIF. <strong>Evidence:</strong> 17 tests pass, build succeeds on the inspected main branch.</p><ul class="tags"><li>TypeScript</li><li>CLI · SARIF</li><li>Vitest · CI</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/shipguard" target="_blank" rel="noopener noreferrer">Source ↗</a></div></article>
-        <article class="project"><div class="project-top"><span>06 / FULL-STACK PRODUCT</span><span class="project-status">FUNCTIONAL · TESTED</span></div><h3>School CMS</h3><p><strong>Problem:</strong> School content requires maintainable editing workflows. A Laravel application supports academic announcements, gallery management, authentication, administration, and configurable site templates. Built during the documented internship.</p><ul class="tags"><li>Laravel 11</li><li>PHP · Blade</li><li>Tailwind CSS</li></ul><div class="project-links"><a href="https://github.com/0xyz-exe/sekolah" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="https://sekolah-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live site ↗</a></div></article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>01 / AGENTIC AI</span><span class="project-status">PROTOTYPE</span></div>
+            <h3>OpenAgentStudio</h3>
+            <p><strong>Problem:</strong> Agent workflows need visibility before they can be debugged. A local-first prototype for composing, inspecting, and orchestrating agent pipelines.</p>
+            <p class="project-challenge"><strong>Challenge:</strong> Make intermediate agent steps inspectable.</p>
+            <p class="project-limits">No claimed provider isolation, durable execution, or permission controls.</p>
+            <ul class="tags"><li>Python</li><li>Agent workflows</li><li>Local-first</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/OpenAgentStudio" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+          </div>
+          <figure class="project-preview">
+            <img src="assets/projects/openagentstudio.jpg" alt="OpenAgentStudio workflow editor showing a node canvas and agent settings panel" loading="lazy" decoding="async">
+            <figcaption>REPOSITORY SCREENSHOT / WORKFLOW BUILDER</figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>02 / DATABASE SAFETY</span><span class="project-status">PROTOTYPE</span></div>
+            <h3>MigrationPilot</h3>
+            <p><strong>Problem:</strong> Destructive or blocking DDL can cause outages. Static PostgreSQL migration analysis parses schemas, evaluates deterministic safety rules, and suggests safer alternatives.</p>
+            <p class="project-challenge"><strong>Challenge:</strong> Explain risk without executing migrations.</p>
+            <p class="project-limits">No live database execution.</p>
+            <ul class="tags"><li>TypeScript</li><li>PostgreSQL AST</li><li>CLI · CI · SARIF</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/migrationpilot" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+          </div>
+          <figure class="project-preview">
+            <img src="assets/projects/migrationpilot.jpg" alt="MigrationPilot analysis workspace with SQL migration editor and safety findings" loading="lazy" decoding="async">
+            <figcaption>REPOSITORY SCREENSHOT / MIGRATION ANALYSIS</figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>03 / IDENTITY SECURITY</span><span class="project-status">PROTOTYPE</span></div>
+            <h3>AccessTrail</h3>
+            <p><strong>Problem:</strong> Entitlement reviews need traceable decisions. The platform implements access review flows, server-enforced separation of duties, revocation states, and a verifiable SHA-256 audit chain.</p>
+            <p class="project-challenge"><strong>Challenge:</strong> Preserve audit integrity across authorization-sensitive actions.</p>
+            <p class="project-limits">Verify production readiness independently.</p>
+            <ul class="tags"><li>FastAPI</li><li>React · TypeScript</li><li>RBAC · Audit chain</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/access-trail" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+          </div>
+          <figure class="project-preview">
+            <img src="assets/projects/access-trail.jpg" alt="AccessTrail identity governance dashboard with access review and audit information" loading="lazy" decoding="async">
+            <figcaption>REPOSITORY SCREENSHOT / ACCESS DASHBOARD</figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>04 / DATA ENGINEERING</span><span class="project-status">PROTOTYPE</span></div>
+            <h3>DataQuality Forge</h3>
+            <p><strong>Problem:</strong> Data defects need reproducible checks. Local dataset profiling, declarative validation rules, explainable scoring, and schema change detection combine in one self-hosted tool.</p>
+            <p class="project-challenge"><strong>Challenge:</strong> Apply consistent checks across tabular formats and surface actionable failures.</p>
+            <p class="project-limits">Self-hosted; no managed cloud service.</p>
+            <ul class="tags"><li>FastAPI</li><li>DuckDB</li><li>React · TypeScript</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/dataquality-forge" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+          </div>
+          <figure class="project-preview">
+            <img src="assets/projects/dataquality-forge.jpg" alt="DataQuality Forge dataset profiling dashboard with validation and run metrics" loading="lazy" decoding="async">
+            <figcaption>REPOSITORY SCREENSHOT / DATA PROFILING</figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>05 / RELEASE ENGINEERING</span><span class="project-status">FUNCTIONAL · TESTED</span></div>
+            <h3>ShipGuard</h3>
+            <p><strong>Problem:</strong> Release checks are fragmented. A local analyzer combines deterministic quality gates for security, tests, dependencies, build readiness, and documentation; emits SARIF.</p>
+            <p class="project-challenge"><strong>Evidence:</strong> 17 tests pass, build succeeds on the inspected main branch.</p>
+            <p class="project-limits">Local analysis only; no cloud execution environment.</p>
+            <ul class="tags"><li>TypeScript</li><li>CLI · SARIF</li><li>Vitest · CI</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/shipguard" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+          </div>
+          <figure class="project-preview">
+            <img src="assets/projects/shipguard.jpg" alt="ShipGuard release assessment dashboard showing readiness checks and findings" loading="lazy" decoding="async">
+            <figcaption>REPOSITORY SCREENSHOT / RELEASE ASSESSMENT</figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <div class="project-top"><span>06 / FULL-STACK PRODUCT</span><span class="project-status">FUNCTIONAL · TESTED</span></div>
+            <h3>School CMS</h3>
+            <p><strong>Problem:</strong> School content requires maintainable editing workflows. A Laravel application supports academic announcements, gallery management, authentication, administration, and configurable site templates. Built during the documented internship.</p>
+            <p class="project-challenge"><strong>Challenge:</strong> Make CMS workflows accessible to non-technical staff.</p>
+            <p class="project-limits">No UI screenshot available; live site linked below.</p>
+            <ul class="tags"><li>Laravel 11</li><li>PHP · Blade</li><li>Tailwind CSS</li></ul>
+            <div class="project-links"><a href="https://github.com/0xyz-exe/sekolah" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="https://sekolah-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live site ↗</a></div>
+          </div>
+          <figure class="project-preview project-preview--empty">
+            <div class="project-preview-placeholder" aria-hidden="true"><span>NO SCREENSHOT</span><span>LIVE SITE AVAILABLE</span></div>
+            <figcaption>FULL-STACK LARAVEL APPLICATION</figcaption>
+          </figure>
+        </article>
       </div>
-      <p class="section-footnote">Maturity labels reflect the inspected repository snapshot, not production certification. “Functional” means implementation and a test/build signal exist; deployment, security posture, and operational readiness remain separately unverified. See <a href="portfolio_audit_report.md">the complete repository audit, evidence, scores, and roadmap</a>.</p>
+      <p class="section-footnote">Maturity labels reflect the inspected repository snapshot, not production certification. "Functional" means implementation and a test/build signal exist; deployment, security posture, and operational readiness remain separately unverified. See <a href="portfolio_audit_report.md">the complete repository audit, evidence, scores, and roadmap</a>.</p>
     </section>
     <section class="section wrap" id="experience" aria-labelledby="experience-title">
       <div class="section-head"><div><p class="eyebrow">04 / BACKGROUND</p><h2 id="experience-title">Experience &amp; <span>education.</span></h2></div></div>
