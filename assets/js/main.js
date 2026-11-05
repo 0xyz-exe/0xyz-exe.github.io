@@ -65,6 +65,22 @@
     lazyImgs.forEach(img => imgObserver.observe(img));
   }
 
+  // ── NAV SCROLL-SPY (Field Marker active state) ──
+  const navLinks = Array.from(nav.querySelectorAll("a[href^='#']"));
+  const sections = navLinks.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          const active = a.getAttribute("href") === "#" + entry.target.id;
+          a.classList.toggle("nav-active", active);
+          a.setAttribute("aria-current", active ? "true" : "false");
+        });
+      }
+    });
+  }, { threshold: 0.25, rootMargin: "-64px 0px -55% 0px" });
+  sections.forEach(s => spy.observe(s));
+
   // ── SCROLL REVEAL ──
   if ("IntersectionObserver" in window) {
     const revealTargets = document.querySelectorAll(
@@ -122,14 +138,16 @@
     arrows.className = "carousel-arrows";
 
     const prevBtn = document.createElement("button");
+    prevBtn.type = "button";
     prevBtn.className = "carousel-btn prev";
     prevBtn.setAttribute("aria-label", "Previous project");
-    prevBtn.innerHTML = "&#8592;";
+    prevBtn.innerHTML = "&#8592;"; // static entity literal — not user input, no XSS risk
 
     const nextBtn = document.createElement("button");
+    nextBtn.type = "button";
     nextBtn.className = "carousel-btn next";
     nextBtn.setAttribute("aria-label", "Next project");
-    nextBtn.innerHTML = "&#8594;";
+    nextBtn.innerHTML = "&#8594;"; // static entity literal — not user input, no XSS risk
 
     const dotBtns = cards.map((card, i) => {
       const d = document.createElement("button");

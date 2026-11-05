@@ -13,9 +13,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offs
 .wordmark{display:flex;align-items:center;gap:.5rem;font-weight:800;letter-spacing:-.04em}.wordmark>span{color:var(--signal)}.wordmark small{font:.66rem var(--font-mono);letter-spacing:.1em;color:var(--muted)}
 .nav{display:flex;align-items:center;gap:clamp(.6rem,1.8vw,1.4rem);font-size:.83rem}.nav>a{color:var(--muted);transition:color var(--duration-fast)}.nav>a:hover{color:var(--signal)}
 .theme-toggle,.menu-toggle{min-height:40px;border:1px solid var(--line);background:var(--graphite);padding:.45rem .7rem;cursor:pointer;transition:border-color var(--duration-fast),background var(--duration-fast)}.theme-toggle:hover{border-color:var(--signal);background:var(--panel)}.menu-toggle{display:none;gap:5px;align-content:center;justify-items:center;width:40px}.menu-toggle span{width:16px;border-top:1.5px solid var(--text);transition:transform var(--duration-fast),opacity var(--duration-fast)}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.25px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
-.hero{min-height:min(44rem,calc(100svh - 4rem));display:grid;grid-template-columns:minmax(0,1.35fr) minmax(13rem,.65fr);align-items:center;gap:clamp(2rem,5vw,5rem);position:relative;padding:4rem 0 5rem}.hero:before{content:"";position:absolute;right:0;top:16%;height:3rem;border-right:2px solid var(--signal)}
-.signal-dot{display:inline-block;width:.44rem;height:.44rem;border-radius:50%;background:var(--signal);margin-right:.45rem;animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
+.hero{min-height:min(44rem,calc(100svh - 4rem));display:grid;grid-template-columns:minmax(0,1.35fr) minmax(13rem,.65fr);align-items:center;gap:clamp(2rem,5vw,5rem);position:relative;padding:4rem 0 5rem}
+.signal-dot{display:inline-block;width:.44rem;height:.44rem;border-radius:50%;background:var(--signal);margin-right:.45rem;}
+
 h1,h2,h3,p,figure{margin-top:0}.hero h1{max-width:16ch;font:800 clamp(2.8rem,6.5vw,6rem)/.96 var(--font-display);letter-spacing:-.055em;margin:0 0 1.2rem}.hero h1 span,.section-head h2 span,.github-band h2 span,.contact h2 span{color:var(--signal)}
 .lede{max-width:56ch;color:var(--muted);font-size:clamp(1rem,1.6vw,1.15rem);line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.4rem 0}
 .button{min-height:42px;padding:.6rem .95rem;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;gap:.65rem;background:var(--graphite);transition:transform var(--duration-fast) var(--ease),border-color var(--duration-fast),box-shadow var(--duration-fast);font-size:.86rem;font-weight:650}.button:hover{transform:translateY(-2px);border-color:var(--signal);box-shadow:0 6px 20px #0003}.button.primary{color:var(--ink);background:var(--signal);border-color:var(--signal)}.button.primary:hover{box-shadow:0 6px 24px color-mix(in srgb,var(--signal) 35%,transparent)}.button.quiet{background:transparent}
@@ -178,4 +178,42 @@ h1,h2,h3,p,figure{margin-top:0}.hero h1{max-width:16ch;font:800 clamp(2.8rem,6.5
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none;transition:none}
   .lazy{opacity:1;transition:none}
+}
+
+/* ── INSTRUMENTAL SIGNATURES ── */
+
+/* Sig 1: Measure Line — full-bleed 1px signal + 7×7 terminal square */
+.measure-line{position:relative;width:100%;border-top:1px solid var(--signal);overflow:visible}
+.measure-line::after{content:"";position:absolute;right:max(calc((100% - 72rem)/2),.75rem);top:-4px;width:7px;height:7px;background:var(--signal)}
+
+/* Sig 3: Field Marker — expertise list (replace background-only with strip) */
+.expertise-list article{position:relative}
+.expertise-list article::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform var(--duration-fast) var(--ease)}
+.expertise-list article:hover::before{transform:scaleX(1)}
+
+/* Sig 3: Field Marker — nav active state */
+.nav>a.nav-active{color:var(--text);border-bottom:2px solid var(--signal);padding-bottom:1px}
+
+/* ── ABOUT — break from uniform section-head pattern ── */
+#about{border-top:none}
+#about .section-head{display:block;margin-bottom:2.25rem}
+#about .section-head h2{font-size:clamp(2.8rem,5.5vw,5.2rem);max-width:24ch;margin:.25rem 0 .85rem}
+#about .section-note{display:block;margin:0}
+
+/* ── EXPERIENCE — Type Offset on timeline dates ── */
+.timeline time{font:900 clamp(1rem,2vw,1.4rem)/.9 var(--font-display);letter-spacing:-.04em}
+
+/* Remove double border where measure-line precedes section */
+.github-band{border-top:none}
+
+/* ── HERO h1 — tighten for Arial Black ── */
+.hero h1{letter-spacing:-.065em}
+
+/* ── SECTION h2 weight ── */
+.section-head h2,.github-band h2,.contact h2{font-weight:900}
+
+/* ── MOBILE REFINEMENTS ── */
+@media(max-width:26rem){
+  .actions{flex-direction:column}
+  .actions .button{width:100%;justify-content:center}
 }
