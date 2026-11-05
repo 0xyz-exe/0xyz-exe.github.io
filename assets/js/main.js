@@ -78,7 +78,7 @@
         });
       }
     });
-  }, { threshold: 0.25, rootMargin: "-64px 0px -55% 0px" });
+  }, { threshold: 0.15, rootMargin: "-64px 0px -40% 0px" });
   sections.forEach(s => spy.observe(s));
 
   // ── SCROLL REVEAL ──
@@ -110,6 +110,7 @@
     const section = grid.parentElement;
     const wrap = document.createElement("div");
     wrap.className = "projects-track-wrap";
+    wrap.setAttribute("tabindex", "0");
     const track = document.createElement("div");
     track.className = "projects-track";
     track.setAttribute("role", "region");
